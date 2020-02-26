@@ -1,7 +1,9 @@
+"""
 # equilateral triangles have all three sides with the same length
 # isosceles triangles have two sides with the same length
 # scalene triangles have three sides with different lengths
 # right triangles have three sides with lengths, a, b, and c where a2 + b2 = c2
+"""
 
 
 def classify_triangle(side_a, side_b, side_c):
@@ -21,7 +23,7 @@ def classify_triangle(side_a, side_b, side_c):
         triangle_classification = 'equilateral'
     elif len(intersection) == 2:
         triangle_classification = 'isosceles'
-    elif len(intersection) == 3:
+    else:
         triangle_classification = 'scalene'
 
     return triangle_classification
