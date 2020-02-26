@@ -12,6 +12,9 @@ def classify_triangle(side_a, side_b, side_c):
     is_right_triangle = side_a ** 2 + side_b ** 2 == side_c ** 2
     triangle_classification = 'Invalid Triangle'
 
+    if side_a <= 0 or side_b <= 0 or side_c <= 0:
+        return triangle_classification
+
     if is_right_triangle:
         triangle_classification = 'right'
     elif len(intersection) == 1:
